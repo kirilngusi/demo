@@ -14,44 +14,56 @@
 
 <body>
     <div class="container">
+
+        <input type="checkbox" name="" class="nav_input" id="nav_input_check">
+
+        <label for="nav_input_check" class="c_left_hide">
+            <i class="fas fa-bars"></i>
+        </label>
+
         <div class="c-left">
+            
+            <label for="nav_input_check" class="cancel_navbar">
+                <i class="fas fa-times"></i>
+            </label>
+
             <h1 class="logo">
                 <a href="#" class="name"> Tuấn Anh </a>
             </h1>
             <nav class="nav_menu">
                 <ul class="nav_sub_menu">
                     <li>
-                        <a href="#home" class="menu">
+                        <a href="#home" data-after="home" class="menu">
                             <i class="fas fa-home " style="color: orange;"></i>
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#about" class="menu">
+                        <a href="#about" data-after="about" class="menu">
                             <i class="fas fa-user-check" style="color: orange;"></i>
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu">
+                        <a href="#experience"  data-after="experience" class="menu">
                             <i class="fas fa-briefcase" style="color: orange;"></i>
                             Experience
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu">
+                        <a href="#skills"  data-after="skills" class="menu">
                             <i class="fab fa-react" style="color: orange;"></i>
                             Skills
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu">
+                        <a href="#projects" data-after="projects" class="menu">
                             <i class="fas fa-graduation-cap" style="color: orange;"></i>
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="menu">
+                        <a href="#end" data-after="end" class="menu">
                             <i class="fas fa-comments" style="color: orange;"></i>
                             The end
                         </a>
@@ -59,8 +71,12 @@
                 </ul>
             </nav>
         </div>
+
+
+        <!-- c-right -->
         <div class="c-right">
-            <section class="home">
+
+            <section class="home" id="home">
                 <div class="home_info">
                     <div class="home_avatar">
                         <img src="./image/image.png" alt="Avatar">
@@ -69,7 +85,7 @@
                     <span class="home_title">I'm web developer</span>
                     <ul class="home_link">
                         <li>
-                            <a href="" class="home_socal">
+                            <a href="#" class="home_socal">
                                 <i class="fab fa-linkedin home_sea_water__13AOc"></i>
                             </a>
                         </li>
@@ -92,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about_me">
                     <h1>About Me</h1>
                     <div class="space"></div>
@@ -107,8 +123,9 @@
                                 <p class="text">I am Tuan Anh (Kiril) , i from Ha Noi, Viet Nam</p>
                                 <p class="text"><strong>Back-End:</strong> I have knowledgeable in Javascript, MongoDB,
                                     Nodejs...</p>
-                                <p class="text"><strong>Front-End:</strong> I have knowledgeable in HTML , CSS , (a
-                                    little of ReactJs , Bootstrap) </p>
+                                <p class="text"><strong>Front-End:</strong> I have knowledgeable in HTML , CSS , Bootstrap (a
+                                    little of ReactJs) </p>
+
                                 <button class="button">Download CV </button>
                             </div>
                         </div>
@@ -117,7 +134,7 @@
             </section>
 
 
-            <section class="experience">
+            <section class="experience" id="experience">
                 <div class="exper_title">
                     <h1>Experience</h1>
                     <div class="space"></div>
@@ -132,7 +149,7 @@
                 </div>
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="skill_title">
                     <h1>Skills</h1>
                     <div class="space"></div>
@@ -170,7 +187,7 @@
                 </div>
             </section>
 
-            <section class="projects">
+            <section class="projects" id ="projects">
                 <div class="projects_title">
                     <h1 class="project_name">Projects</h1>
                     <div class="space"></div>
@@ -189,8 +206,8 @@
                                     </h1>
                                 </div>
                             </div>
-
                         </div>
+
 
                         <div class="project_tkb">
                             <div class="prj_container">
@@ -209,32 +226,30 @@
 
                         </div>
                     </div>
-                    <button class="button">See More</button>
+                    <div class="button_proj">
+                        <button class="button">See More</button>
+                    </div>
                 </div>
             </section>
 
-            <section class="end">
+            <section class="end" id="end">
                 <div class="end_title">
                     <h1 class="end_">The End</h1>
                     <div class="space"></div>
                     <div class="end_container">
                         <div class="end_sub_c">
-                            <p class="title">Finally, Thanks for spend time to look at my cv profile . ^_&</p>                            
+                            <p class="title">Finally, Thanks for spend time to look at my cv profile . ^_&</p>
+                            <div class="cat_gif">
+                                <img class="cat_typing" src="./image/cat_typing.gif"></img>
+                            </div>
                         </div>
-
-                        <!-- <div class="end_copyright">
-                            <span>© 2021 Copyright</span>
-                        </div> -->
                     </div>
                     <div class="end_copyright">
                         <span>© 2021 Copyright</span>
                     </div>
                 </div>
             </section>
-
-
         </div>
-
 </body>
 
 </html>
